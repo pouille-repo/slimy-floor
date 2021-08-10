@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "slimyfloor",
+  "version": "${version}",
+  "name": "Slimy Floor",
+  "description": "Display slime particles when walking in a slime chunk area. This mod is inspired from a comment of Cubfan135, https://twitter.com/cubfan135/status/1369763834223865859",
+  "authors": [
+    {
+      "name": "Pouille"
+    }
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "pouille.me",
+    "sources": "https://github.com/pouille-repo/slimy-floor"
+  },
+  "license": "MIT",
+  "icon": "assets/sticky/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.pouille.mods.slimyfloor.Client"
+    ],
+    "server": [
+      "me.pouille.mods.slimyfloor.Server"
+    ]
+  },
+  "mixins": [
+    "slimy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
